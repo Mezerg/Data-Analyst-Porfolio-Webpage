@@ -146,14 +146,14 @@ article p {
     color: var(--smallerFont);
 }
 
-.passion-card img{
+.passion-card img {
     height: 40px;
     width: 40px;
 }
 
 /* ############################ PROJECT ############################*/
 
-.project-content{
+.project-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,11 +161,11 @@ article p {
     margin-top: 5%;
 }
 
-.project{
+.project {
     margin-top: 30px;
 }
 
-.project img{
+.project img {
     height: 800px;
     width: 1200px;
     border: 2px solid var(--hoverColor);
@@ -177,42 +177,43 @@ article p {
 
 /* ############################ SKILLS ############################*/
 
-.skills-content{
+.skills-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 5%;
 }
-.skills-holder{
+
+.skills-holder {
     margin-top: 10%;
     display: flex;
     justify-content: center;
 }
 
-.skill{
+.skill {
     margin-right: 50px;
 }
 
-.skill img{
+.skill img {
     height: 100px;
     width: 100px;
 }
 
-#powerbi img{
+#powerbi img {
     border: 1px solid var(--greyfrompalette);
 }
 
 
 /* ############################ RESUME ############################*/
 
-.resume-content{
+.resume-content {
     display: felx;
     flex-direction: column;
     margin-top: 5%;
 }
 
-.resume-content img{
+.resume-content img {
     margin-top: 10%;
     animation: pulsate 2s infinite;
 }
@@ -222,10 +223,152 @@ article p {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
+    }
+}
+
+/* ############################ MEDIA QUERIES ############################*/
+
+@media (max-width: 1024px) {
+    nav ul {
+        margin-right: 20px;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .logo {
+        font-size: 3rem;
+        margin-left: 20px;
+    }
+
+    .about-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    article p {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .passion-card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .project img {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    .project img {
+        height: 400px;
+        width: 400px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    article {
+        width: 90%;
+    }
+
+    article p {
+        font-size: 1.5rem;
+    }
+
+    .about-content {
+        gap: 40px;
+    }
+
+    .passion-card {
+        width: 150px;
+        height: 150px;
+        margin-top: 150px;
+    }
+
+    .passion-card img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .project img {
+        border: 1px solid var(--hoverColor);
+        box-shadow: rgba(149, 157, 165, 0.1) 0px 4px 12px;
+    }
+
+    .skills-holder {
+        margin-top: 5%;
+    }
+
+    .skill {
+        margin: 10px;
+    }
+
+    .skill img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .resume-content img {
+        margin-top: 5%;
+    }
+
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-holder {
+        display: flex;
+        flex-direction: column;
     }
 }
