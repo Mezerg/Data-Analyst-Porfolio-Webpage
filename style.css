@@ -79,7 +79,6 @@ nav a:hover {
 /*############################ HOME ############################*/
 h1 {
     font-size: 60px;
-    text-align: center;
 }
 
 h2{
@@ -220,7 +219,7 @@ article p {
 }
 
 .resume-content img {
-    margin-top: 10%;
+    margin-top: 40%;
     animation: pulsate 2s infinite;
 }
 
